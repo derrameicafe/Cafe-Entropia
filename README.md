@@ -10,6 +10,7 @@ Frontend:
 HTML: Estrutura da página.
 CSS: Estilo visual.
 JavaScript: Interatividade e elementos dinâmicos.
+
 Backend:
 
 Java: Lógica do sistema e conexão com o banco de dados.
