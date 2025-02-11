@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Entropia Café & Livros</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="dest py-1 text-black">
+      <div class="container text-center">
+        <p>Esta página foi criada para o Projeto Integrador do Curso Técnico de Desenvolvimento de Sistemas do Senac EAD. A empresa fictícia Entropia Café e Livros serve aos propósitos das atividades.</p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo text.png" alt="Entropia Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Localização</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-banner">
+      <picture>
+        <source srcset="images/header 800x600.png" media="(max-width: 768px)">
+        
+        <img src="images/header 1920x600.png" alt="Banner Principal" class="img-fluid">
+    </picture>
+    </div>
+  </header>
+
+  <main>
+    <!-- Part 1: General Informations -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <p class="lead">Somos um espaço para apreciadores do café e boa leitura.</p>
+      </div>
+    </section>
+
+    <!-- Part 2: Services -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="services-card" id="cafe-card">
+              <span class="service-name">CAFETERIA</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="services-card" id="library-card">
+              <span class="service-name">LIVRARIA</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="services-card" id="studies-card">
+              <span class="service-name">ESPAÇO DE ESTUDOS</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="services-card" id="events-card">
+              <span class="service-name">EVENTOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for service detais -->
+    <div id="service-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modal-title"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="modal-body"></div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Part 3: Gallery -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Galeria</h2>
+        <div class="text-center">
+          <p>Confira alguns de nossos registros.</p>
+        </div>
+        <br>
+        <div class="row g-3 text-center">
+          <div class="col-md-4"><img src="images/galery 1.png" class="img-fluid" alt="Imagem 1"></div>
+          <div class="col-md-4"><img src="images/galery 2.png" class="img-fluid" alt="Imagem 2"></div>
+          <div class="col-md-4"><img src="images/galery 3.png" class="img-fluid" alt="Imagem 3"></div>
+          <div class="col-md-4"><img src="images/galery 4.png" class="img-fluid" alt="Imagem 4"></div>
+          <div class="col-md-4"><img src="images/galery 5.png" class="img-fluid" alt="Imagem 5"></div>
+          <div class="col-md-4"><img src="images/galery 6.png" class="img-fluid" alt="Imagem 6"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 4: Map -->
+    <section id="map" class="map">
+      <h2 class="section-title">Estamos te esperando</h2>
+      <div class="text-center">
+        <p>na Rua Fictícia, número 123, no bairro Bairro em Cidade.</p>
+      </div>
+      <br>
+      <div>
+        <picture>
+          <source srcset="images/map 800x600.png" media="(max-width: 768px)">
+          
+          <img src="images/map 1920x600.png" alt="Banner Principal" class="img-fluid">
+      </picture>
+      </div>
+    </section>
+
+    <!-- Part 5: Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="logo-full text-center">
+          <img src="images/logo full.png" alt="Logo Entropia">
+        </div>
+        <h2 class="section-title">Contato</h2>
+        <div class="text-center">
+          <p class="mb-4">Envie seu comentário, dúvida ou sugestão.</p>
+        </div>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="estado" class="form-label">Estado</label>
+              <input type="text" class="form-control" id="estado" placeholder="Estado">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-3 text-white">
+    <div class="container text-center">
+      <p>Imagens por freepik.com</p>
+    </div>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
